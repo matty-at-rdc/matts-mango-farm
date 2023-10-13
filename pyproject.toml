@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "matts-mango-farm"
+version = "0.1.0"
+description = ""
+authors = ["Matthew Cale <matt.cale@move.com>"]
+readme = "README.md"
+packages = [{include = "matts_mango_farm"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+factory-boy = "^3.3.0"
+black = "^23.9.1"
+ruff = "^0.0.292"
+coverage = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
